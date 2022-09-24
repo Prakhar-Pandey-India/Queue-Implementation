@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="account_style.css">
+    <style>
+        body{
+            background-color: black;
+        }
+    </style>
+    <script>
+        function login(){
+            var user=document.getElementById('un').value;
+            var pwd=document.getElementById('pw').value;
+            if(user=="admin" && pwd=="admin"){
+                location.href = 'admin.php';
+            }else{
+                alert("Invalid Credential!!");
+                location.href = 'account.php';
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <a href="account.php" style="color: rgb(255, 255, 255);">Click here to back on login page</a>        
+    <center>
+        <h1 style="text-align: center; background-color: black ;color: rgb(255, 251, 0);">Admin Login Page</h1>
+    <br><br>
+    <form>
+        <label style="color: rgb(255, 255, 255);"">USERNAME: </label>
+        <input type="text" name="un" id="un" ><br><br>
+        <label style="color: rgb(255, 255, 255);">PASSWORD: </label>
+        <input type="password" name="pw" id="pw">
+        <br><br>
+        <button type="button" onclick="login()">Login</button>
+        
+    </from>
+    <br>
+    <img src="11.jpg" style="height:500px;">
+</center>
+</body>
+</html>

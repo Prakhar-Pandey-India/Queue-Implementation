@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Demo Page</title>
+    <link rel="stylesheet" href="navbar.css">
+    <style>
+        button{
+            height: 35px; 
+            width:100px;
+            border-radius: 11px;
+            cursor: pointer;
+        }
+        table,input{
+            height: 30px; width:75px; padding: 0%;
+        }
+        .in-text{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="navi">
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="info.html">INFORMATION ON QUEUE</a>
+                <a href="account.php">LOG IN/SIGN UP</a>
+                <a href="AboutUs.html">ABOUT US</a>
+                <div class="animation start-home"></div>
+            </nav>
+        </div>
+    <br>
+    <h1 style="text-align: center; background-color: black ;color: rgb(255, 251, 0);">Queue Demo Page</h1>
+    <br>
+    <div style="width:100%; height: 41px; background-color: rgb(100, 96, 96);">
+        <p style="margin-left: 51px;">
+            <input type="text" class="in-text" id="id-txt" pattern="[a-zA-Z]" placeholder="Enter Number" style="height: 30px; width:150px; background-color: rgb(255, 255, 255); margin: 2.5px;" required autofocus> &nbsp; 
+            <button type="submit" id="enq"  style=" background-color: rgb(255, 255, 255);">Enqueue</button> &nbsp;
+            <button type="submit" id="deq" style=" background-color: rgb(255, 255, 255);">Dequeue</button> &nbsp;
+            <button type="reset"id="cls" onclick="clear()" style=" background-color: rgb(255, 255, 255);">Clear Queue</button>
+        </p>
+    </div>
+    <br><br>
+    <p id="para-msg" style="margin-left: 101px;"></p>
+    <p style="margin-left: 101px;">
+        Front Position &nbsp;
+        <input type="text" class="front-text" id="f-txt" pattern="[a-zA-Z]" placeholder="Head" readonly style="height: 30px; width:75px; text-align: center; background-color: rgb(255, 255, 255);" required autofocus> &nbsp; 
+        Rear Position &nbsp;
+        <input type="text" class="rear-text" id="r-txt" pattern="[a-zA-Z]" placeholder="Tail" readonly style="height: 30px; width:75px;text-align: center; background-color: rgb(255, 255, 255);" required autofocus> &nbsp; 
+    </p>
+    <br><br>    
+    <table style="text-align: center; margin-left: 51px; padding: 0px;">
+        <tr>
+            <td><input type="text" class="in-text" readonly></td>
+            <td><input type="text" class="in-text" readonly></td>
+            <td><input type="text" class="in-text" readonly></td>
+            <td><input type="text" class="in-text" readonly></td>
+            <td><input type="text" class="in-text" readonly></td>
+            <td><input type="text" class="in-text" readonly></td>
+            <td><input type="text" class="in-text" readonly></td>
+            <td><input type="text" class="in-text" readonly></td>
+            <td><input type="text" class="in-text" readonly></td>
+        </tr>
+        <tr>
+            <td  class="last-index">0</td></td><td class="last-index">1</td><td class="last-index">2</td><td class="last-index">3</td><td class="last-index">4</td><td class="last-index">5</td><td class="last-index">6</td><td class="last-index">7</td><td class="last-index">8</td>
+        </tr>
+    </table>
+    <br>
+    <img src="9.gif" style="height: 350px; width: 500px;"> &nbsp;&nbsp;
+    <img src="10.gif" style="height: 350px; width: 500px; margin-left: 351px; margin-top: -215px; border: 1px solid black;">
+    <script src="demo.js"></script>
+</body>
+</html>

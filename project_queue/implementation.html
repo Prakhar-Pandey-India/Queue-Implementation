@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queue Implementation Page</title>
+    <link rel="stylesheet" href="implementation_style.css">
+    <link rel="stylesheet" href="implementation_navbar.css">
+    <script src="linear.js"></script>
+    <style>
+        /* @import url('https://fonts.googleapis.com/css2?family=Updock&family=Whisper&display=swap'); */
+    </style>
+</head>
+<body>
+    <div class="navi">
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="info.html">INFORMATION ON QUEUE</a>
+            <a href="account.php">LOG IN/SIGN UP</a>
+            <a href="AboutUs.html">ABOUT Us</a>
+            <div class="animation start-home"></div>
+        </nav>
+    </div>
+    <h1 class="glow" style="margin-top:7%; font-size: 100px;">Queue Implementation Page</h1>
+    <div id="askForNumOfElem">
+        <label for="numOfElements">Enter the Number element: </label>
+        <input type="number" id="numOfElementsIn" autofocus>
+        <button onclick="numOfElementsCreate()" id="createArrayButton">Create Array</button>
+        <button onclick="refreshPage()" id="resetQueue">Reset Queue</button>
+    </div>
+    <div class="colorDenote" style="float: right;">
+        <table style="margin-right: 2.5rem;">
+            <tr>
+                <td>Front</td>
+                <td><div style="height: 20px; width: 20px; border-radius: 10px; background-color: orange; align-self: center;"></div> 
+                </td>
+                <td>Rear</td>
+                <td><div style=" height: 20px; width: 20px; border-radius: 10px; background-color: red; align-self: center;"></div> 
+                </td>
+            </tr>
+            <tr>       
+                <td>Front: </td>
+                <td id="frontval">-1</td>
+                <td>Rear: </td>
+                <td id="rearval">-1</td>
+            </tr>
+        </table>
+    </div>
+    <div class="queueOperations">
+        <label for="elementInput">Enter the Element to insert: </label>
+        <input type="number" id="insertElement" required>
+        <button onclick="insertElement()">Insert Element</button>
+        <button onclick="removeElement()">Remove Element</button>
+    </div>
+    <div class="boxContainer">
+    </div>
+</body>
+</html>
