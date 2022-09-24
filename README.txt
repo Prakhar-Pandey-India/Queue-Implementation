@@ -8,3 +8,5 @@ user password: admin
 
 home page link:
 http://localhost/queue/project_queue/
+
+Index page(Front page/First page) is named as home.html
